@@ -1,0 +1,396 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family: arial
+}
+a{
+	text-decoration: none
+}
+.container{
+	width: 1280px;
+	margin: 0px auto
+}
+.header{
+	background: #eee;
+	display: table;
+	width: 100%;
+	padding: 20px 0px
+}
+a{
+	color: #1428a0
+}
+.header-left{
+	width: 200px;
+	float: left
+}
+
+.logo{
+	font-size: 30px;
+	font-weight: bold;
+	color: #1428a0
+}
+
+
+.header-right{
+	float: right;
+	padding: 10px 0px
+}
+
+.header-right ul li{
+	display: inline;
+	margin-left: 10px
+}
+
+.header-right ul li a{
+	color: #000;
+	font-weight: bold
+	}
+.mt-3{
+	margin-top: 40px;
+}
+
+
+.productlist{
+	display: table;
+	width: 100%
+}
+
+.productdtl{
+	width: 398px;
+	border:1px solid #ccc;
+	padding-bottom: 20px;
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 40px
+}
+
+.productdtlimg{
+	margin-bottom: 20px;
+}
+
+.productdtlimg img{
+	width: 100%
+}
+
+.productdtltxt h2{
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 10px
+
+
+}
+
+.productdtltxt h2 a{
+color:#1428a0
+}
+
+.pricedtl{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 10px
+}
+
+.pricedtltwo{
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 10px;
+	color:#1428a0
+}
+
+.pricedtltwo del{
+	color: #636363
+	}
+
+.productdtllist{
+	margin-bottom: 20px
+}
+.productdtllist li{
+   border-top: 1px solid #ddd;
+   list-style: none;
+   padding: 10px;
+   font-size: 12px;
+   color: #636363
+}
+
+.productbtn{
+	text-align: center
+}
+.buybtn{
+	padding: 10px 20px;
+	background: #1428a0;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px
+}
+
+.margin-right{
+	margin-right: 0px
+}
+
+
+.footer{
+	background: #525252;
+	padding:30px ;
+	margin-top: 30px
+
+}
+
+.footer ul{
+	display: table;
+	margin:0px auto 20px;
+}
+.footer ul li{
+	display: inline;
+	margin-right: 20px
+	}
+
+.footer ul li a{
+	color: #ccc;
+	font-weight: bold;
+}	
+
+
+.ftrbtm{
+	font-size: 12px;
+	text-align:center;
+	color: #ccc
+}
+
+
+/****/
+header .item {
+  height: 400px;
+  position: relative;
+
+}
+header .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .item .cover {
+  padding: 0px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+header .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
+}
+header .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+header .item .cover .header-content h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+}
+header .item .cover .header-content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+header .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+}
+header .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+header .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+header .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+header .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-prev:focus {
+  outline: 0;
+}
+header .owl-nav .owl-prev:hover {
+  background: #000 !important;
+}
+header .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+header .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+header .owl-nav .owl-next:focus {
+  outline: 0;
+}
+header .owl-nav .owl-next:hover {
+  background: #000 !important;
+}
+header:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+header:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #1428a0 !important;
+}
+
+
+
+.mnhght{
+	min-height: 436px
+}
+
+.heading{
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 30px;
+	margin-bottom: 30px
+
+}
+
+.contact-list{
+	display: table;
+	width: 100%;
+	margin-top: 30px
+}
+.cnt-dtl{
+	width: 47%;
+	float: left;
+	margin-right: 30px
+}
+
+
+.cnt-dtl h4{
+	font-size: 25px;
+	font-weight: bold;
+	color: #1428a0;
+	margin-bottom: 10px;
+
+}
+
+
+.form-dtl{
+	margin-bottom: 10px;
+	width: 50%;
+	float: left;
+}
+
+.full-widht{
+	width: 100%
+}
+.form-dtl label{
+	display: table;
+	width: 100%;
+	font-size: 14px;
+	color: #636363;
+	margin-bottom: 5px;
+}
+
+.form-dtl input{
+	padding: 5px;
+	width: 100%;
+	border:1px solid #ccc;
+}
+
+.form-dtl textarea{
+	padding: 5px;
+	width: 100%;
+	border:1px solid #ccc;
+	height: 40px
+}
+
+.cntdtl-adr{
+	line-height: 20px;
+	padding:0px 0px 0px 40px;
+	font-size: 14px
+}
+
+.cntdtl-adr div{
+	margin-top: 10px
+}
+button{
+  cursor: pointer;
+  border:0px;
+}
